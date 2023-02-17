@@ -1,0 +1,52 @@
+// #include <Arduino.h>
+// const uint8_t button2 = 15; // El botón está conectado al pin digital xx
+// uint8_t status = 0;         // Variable para almacenar el estado actual del botón
+// uint8_t lectura = 0;
+// uint8_t lastStatus = 0;                      // Variable para almacenar el último estado del botón
+// unsigned long tiempoUltimoRebote = 0;        // Tiempo del último rebote
+// const unsigned long tiempoFiltroRebote = 50; // Retardo del antirrebote (en milisegundos)
+
+// uint8_t iR = 0;
+// uint8_t iF = 0;
+// void contarPulsacionesConRuido()
+// {
+//   iR++;
+//   Serial.println("Nro. Pulsaciones con ruido: " + String(iR));
+// }
+
+// void contarPulsacionesFiltradas()
+// {
+//   iF++;
+//   Serial.println("Nro. Pulsaciones Filtradas: " + String(iF));
+// }
+
+// void setup()
+// {
+//   // Inicializar la comunicación serial a 115200 baudios.
+//   Serial.begin(115200);
+//   pinMode(button2, INPUT_PULLDOWN); // +3.3V cuando se presiona el botón; de lo contrario 0V.
+// }
+
+// void loop()
+// {
+//   status = digitalRead(button2);
+
+//   if (status != lastStatus)
+//   {
+//     tiempoUltimoRebote = millis();
+
+//     // Función demostrativa Opcional
+//     if (status == 1)
+//       contarPulsacionesConRuido();
+//   }
+
+//   if ((millis() > tiempoUltimoRebote + tiempoFiltroRebote) && (status != lectura))
+//   {
+//     lectura = status;
+
+//     // Función demostrativa Opcional
+//     if (lectura == 1)
+//       contarPulsacionesFiltradas();
+//   }
+//   lastStatus = status;
+// }
